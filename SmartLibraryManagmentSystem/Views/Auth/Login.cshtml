@@ -1,0 +1,42 @@
+﻿@using SmartLibraryManagmentSystem.ViewModels.Authentication
+@model LoginViewModel
+
+<div class="container mt-5">
+    <div class="col-md-6 mx-auto">
+        <div class="card p-4 shadow">
+            <h3 class="text-center mb-4">Login</h3>
+
+            <form asp-action="Login" method="post">
+
+                <div asp-validation-summary="All" class="text-danger"></div>
+
+                <div class="mb-3">
+                    <label asp-for="Email" class="form-label"></label>
+                    <input asp-for="Email" class="form-control" />
+                    <span asp-validation-for="Email" class="text-danger"></span>
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="Password" class="form-label"></label>
+                    <input asp-for="Password" type="password" class="form-control" />
+                    <span asp-validation-for="Password" class="text-danger"></span>
+                </div>
+
+                <div class="d-grid">
+                    <button type="submit" class="btn btn-primary">
+                        Login
+                    </button>
+                </div>
+
+                <div class="text-center mt-3">
+                    <a asp-action="Register">Create new account</a>
+                </div>
+
+            </form>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}
