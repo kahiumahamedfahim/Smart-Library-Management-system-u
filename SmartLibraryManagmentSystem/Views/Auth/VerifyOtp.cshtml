@@ -10,7 +10,7 @@
 
                 <div asp-validation-summary="All" class="text-danger"></div>
 
-                <input type="hidden" asp-for="Email" />
+                <input type="hidden" asp-for="Email" id="emailField" />
 
                 <div class="mb-3">
                     <label asp-for="OtpCode" class="form-label"></label>
@@ -18,17 +18,68 @@
                     <span asp-validation-for="OtpCode" class="text-danger"></span>
                 </div>
 
-                <div class="d-grid">
+                <div class="d-grid mb-3">
                     <button type="submit" class="btn btn-success">
                         Verify
                     </button>
                 </div>
 
             </form>
+
+            <div class="text-center">
+                <button id="resendBtn" class="btn btn-link" disabled>
+                    Resend OTP (<span id="timer">60</span>s)
+                </button>
+            </div>
+
         </div>
     </div>
 </div>
 
 @section Scripts {
     <partial name="_ValidationScriptsPartial" />
+
+    <script>
+        let countdown = 60;
+        const timerDisplay = document.getElementById("timer");
+        const resendBtn = document.getElementById("resendBtn");
+
+        const interval = setInterval(() => {
+            countdown--;
+            timerDisplay.textContent = countdown;
+
+            if (countdown <= 0) {
+                clearInterval(interval);
+                resendBtn.disabled = false;
+                resendBtn.textContent = "Resend OTP";
+            }
+        }, 1000);
+
+        resendBtn.addEventListener("click", function () {
+
+            const email = document.getElementById("emailField").value;
+
+            fetch('/Auth/ResendOtp', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/x-www-form-urlencoded'
+                },
+                body: 'email=' + encodeURIComponent(email)
+            })
+            .then(response => {
+                if (response.ok) {
+                    alert("OTP resent successfully!");
+
+                    resendBtn.disabled = true;
+                    countdown = 120;
+                    resendBtn.innerHTML = `Resend OTP (<span id="timer">120</span>s)`;
+
+                    location.reload(); // restart timer cleanly
+                }
+                else {
+                    alert("Failed to resend OTP.");
+                }
+            });
+        });
+    </script>
 }

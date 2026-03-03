@@ -111,6 +111,24 @@ namespace SmartLibraryManagmentSystem.Controllers
         {
             return View();
         }
+        [HttpPost]
+        public async Task<IActionResult> ResendOtp(string email)
+        {
+            if (string.IsNullOrEmpty(email))
+                return BadRequest();
+
+            var model = new RegisterViewModel
+            {
+                Email = email
+            };
+
+            var result = await _authService.RegisterAsync(model);
+
+            if (!result)
+                return BadRequest("Unable to resend OTP.");
+
+            return Ok();
+        }
 
     }
 }

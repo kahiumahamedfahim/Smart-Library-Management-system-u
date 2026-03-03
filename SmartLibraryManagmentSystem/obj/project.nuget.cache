@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "5Z/+DHwG7vw=",
+  "dgSpecHash": "0VVjsgbNkJw=",
   "success": true,
-  "projectFilePath": "D:\\asp.net core\\Projects\\Library ManageMent System\\SmartLibraryManagmentSystem\\SmartLibraryManagmentSystem.csproj",
+  "projectFilePath": "D:\\asp.net core\\Projects\\Smart-Library-Management-system-u\\SmartLibraryManagmentSystem\\SmartLibraryManagmentSystem.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\kahiu\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\kahiu\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",

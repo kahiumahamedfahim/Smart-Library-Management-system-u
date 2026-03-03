@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\asp.net core\\Projects\\Library ManageMent System\\SmartLibraryManagmentSystem\\SmartLibraryManagmentSystem.csproj": {}
+    "D:\\asp.net core\\Projects\\Smart-Library-Management-system-u\\SmartLibraryManagmentSystem\\SmartLibraryManagmentSystem.csproj": {}
   },
   "projects": {
-    "D:\\asp.net core\\Projects\\Library ManageMent System\\SmartLibraryManagmentSystem\\SmartLibraryManagmentSystem.csproj": {
+    "D:\\asp.net core\\Projects\\Smart-Library-Management-system-u\\SmartLibraryManagmentSystem\\SmartLibraryManagmentSystem.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\asp.net core\\Projects\\Library ManageMent System\\SmartLibraryManagmentSystem\\SmartLibraryManagmentSystem.csproj",
+        "projectUniqueName": "D:\\asp.net core\\Projects\\Smart-Library-Management-system-u\\SmartLibraryManagmentSystem\\SmartLibraryManagmentSystem.csproj",
         "projectName": "SmartLibraryManagmentSystem",
-        "projectPath": "D:\\asp.net core\\Projects\\Library ManageMent System\\SmartLibraryManagmentSystem\\SmartLibraryManagmentSystem.csproj",
+        "projectPath": "D:\\asp.net core\\Projects\\Smart-Library-Management-system-u\\SmartLibraryManagmentSystem\\SmartLibraryManagmentSystem.csproj",
         "packagesPath": "C:\\Users\\kahiu\\.nuget\\packages\\",
-        "outputPath": "D:\\asp.net core\\Projects\\Library ManageMent System\\SmartLibraryManagmentSystem\\obj\\",
+        "outputPath": "D:\\asp.net core\\Projects\\Smart-Library-Management-system-u\\SmartLibraryManagmentSystem\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
