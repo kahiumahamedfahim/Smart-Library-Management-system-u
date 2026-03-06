@@ -1,0 +1,57 @@
+﻿using SmartLibraryManagmentSystem.Services.Interfaces;
+using System.Net;
+
+namespace SmartLibraryManagmentSystem.Services.Implementation
+{
+    public class FileService : IFileService
+    {
+        private readonly IWebHostEnvironment _env;
+        private readonly ILogger<FileService> _logger;
+        public FileService(IWebHostEnvironment env, ILogger<FileService> logger)
+        {
+             _env = env;
+            _logger = logger;
+        }
+
+        public async  Task<string?> SaveImageAsync(IFormFile? file, string folderName)
+        {
+            try
+            {
+                if(file==null || file.Length==0)
+                {
+                    return null;
+                }
+                var allowedExtensions= new[] {".jpg", ".jpeg", ".png", ".gif" };
+                var extension= Path.GetExtension(file.FileName).ToLower();
+                if(!allowedExtensions.Contains(extension))
+                {
+                    _logger.LogWarning("Unsupported file type: {Extension}", extension);
+                    return null;
+                }
+                if(file.Length>5*1024*1024)
+                {
+                    _logger.LogWarning("File size exceeds limit: {Size} bytes", file.Length);
+                    return null;
+                }
+                var uploadsFolder=Path.Combine(_env.WebRootPath,"image/",folderName);
+                if(!Directory.Exists(uploadsFolder))
+                {
+                    Directory.CreateDirectory(uploadsFolder);
+                }
+                var fileName=Guid.NewGuid().ToString()+extension;
+                var filePath= Path.Combine(uploadsFolder,fileName);
+                using var stream= new FileStream(filePath,FileMode.Create);
+                await file.CopyToAsync(stream);
+                _logger.LogInformation("File uploaded successfully: {FileName}", fileName);
+                return $"images/{folderName}/{fileName}";
+            }
+            
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "Error saving user image");
+                return null;
+
+            }
+        }
+    }
+}

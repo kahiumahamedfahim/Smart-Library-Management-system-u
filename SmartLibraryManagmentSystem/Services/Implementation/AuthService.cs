@@ -102,7 +102,7 @@ namespace SmartLibraryManagmentSystem.Services.Implementation
                         return true;
                     }
                 }
-                var imageUrl = await _fileSerivce.SaveUserImageAsync(model.ProfileImage);
+                var imageUrl = await _fileSerivce.SaveImageAsync(model.ProfileImage, "User");
                 var user = new User
                 {
                     Name = model.Name,

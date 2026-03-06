@@ -1,8 +1,60 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
-}
+﻿@using SmartLibraryManagmentSystem.ViewModels.Book
+@model IEnumerable<BookListViewModel>
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<div class="container mt-4">
+
+    <h2 class="mb-4">Library Books</h2>
+
+    <div class="row">
+
+        @foreach (var book in Model)
+        {
+            <div class="col-md-3 mb-4">
+
+                <div class="card shadow-sm">
+
+                    <img src="@Url.Content(book.ImageUrl)"
+                         class="card-img-top"
+                         style="height:200px; object-fit:cover;" />
+
+                    <div class="card-body">
+
+                        <h5>@book.Title</h5>
+
+                        <p class="text-muted">@book.Author</p>
+
+                        <p>
+                            <strong>Category:</strong> @book.CatagoryName
+                        </p>
+
+                        <p>
+                            <strong>Available:</strong> @book.AvailableQuantity
+                        </p>
+
+                        <a asp-controller="Book"
+                           asp-action="Details"
+                           asp-route-id="@book.Id"
+                           class="btn btn-sm btn-info">
+                            Details
+                        </a>
+
+                        @if (User.IsInRole("User"))
+                        {
+                            <a asp-controller="Borrow"
+                               asp-action="Request"
+                               asp-route-bookId="@book.Id"
+                               class="btn btn-sm btn-success">
+                                Borrow
+                            </a>
+                        }
+
+                    </div>
+
+                </div>
+
+            </div>
+        }
+
+    </div>
+
 </div>

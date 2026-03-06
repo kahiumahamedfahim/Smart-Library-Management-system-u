@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore.Metadata;
+﻿using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.EntityFrameworkCore.Metadata;
 using System.ComponentModel.DataAnnotations;
 
 namespace SmartLibraryManagmentSystem.ViewModels.Book
@@ -14,6 +15,7 @@ namespace SmartLibraryManagmentSystem.ViewModels.Book
         public int Quantity { get; set; }
         [Required]
         public int CatagoryId { get; set; }
+        public IEnumerable<SelectListItem>? Categories { get; set; }
         public string? ExistingImageUrl { get; set; }
         public IFormFile? Image { get; set; }
     }

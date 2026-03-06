@@ -1,0 +1,49 @@
+﻿@using SmartLibraryManagmentSystem.Models.Entities
+@using SmartLibraryManagmentSystem.ViewModels.Book
+@model BookDetialsViewModel 
+
+<div class="container mt-5">
+
+    <div class="row">
+
+        <div class="col-md-4">
+                @if (!string.IsNullOrEmpty(Model.ImageUrl))
+            {
+                <img src="@Url.Content(Model.ImageUrl)"
+                     class="card-img-top img-fluid rounded shadow"
+                     style="height:250px; object-fit:cover;"
+                     alt="@Model.Title" />
+            }
+            else
+            {
+                <div class="bg-light border rounded d-flex align-items-center justify-content-center"
+                     style="height:250px; width:100%;">
+                    <div class="text-center">
+                        <i class="bi bi-image" style="font-size:48px; color:#ccc;"></i>
+                        <p class="text-muted mt-2">No image available</p>
+                    </div>
+                </div>
+            }
+        </div>
+
+        <div class="col-md-8">
+
+            <h2>@Model.Title</h2>
+
+            <p><strong>Author:</strong> @Model.Author</p>
+
+            <p><strong>Category:</strong> @Model.CatagoryName</p>
+
+            <p><strong>Total Quantity:</strong> @Model.Quantity</p>
+
+            <p><strong>Available:</strong> @Model.AvailableQuantity</p>
+
+            <a asp-action="Index" class="btn btn-secondary">
+                Back
+            </a>
+
+        </div>
+
+    </div>
+
+</div>

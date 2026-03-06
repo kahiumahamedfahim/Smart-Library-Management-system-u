@@ -1,5 +1,8 @@
 wwwroot\css\site.css
 wwwroot\favicon.ico
+wwwroot\image\Books\821fd980-c1f7-4755-a3fe-ae89cd107cd1.png
+wwwroot\image\Books\bc1a9a29-cbf9-480c-ad2d-d8468cf136bd.png
+wwwroot\image\Books\cf98f435-5b7b-4d86-8cf7-64068b4b03f7.png
 wwwroot\image\users\c1752b99-8f75-4fbe-bbb0-5f8c13b2f77a.jpg
 wwwroot\js\site.js
 wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css

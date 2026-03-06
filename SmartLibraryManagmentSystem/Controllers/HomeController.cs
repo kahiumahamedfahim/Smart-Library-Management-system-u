@@ -1,21 +1,28 @@
 using System.Diagnostics;
+using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using SmartLibraryManagmentSystem.Models;
+using SmartLibraryManagmentSystem.Services.Interfaces;
 
 namespace SmartLibraryManagmentSystem.Controllers
 {
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
+        private readonly IBookService _bookService;
 
-        public HomeController(ILogger<HomeController> logger)
+        public HomeController(ILogger<HomeController> logger,
+            IBookService bookService)
+
         {
             _logger = logger;
+            _bookService=bookService;
         }
 
-        public IActionResult Index()
+        public async Task<IActionResult> Index()
         {
-            return View();
+            var books= await _bookService.GetAllAsync();
+            return View(books);
         }
 
         public IActionResult Privacy()

@@ -1,0 +1,63 @@
+﻿@using SmartLibraryManagmentSystem.ViewModels.Book
+@model BookCreateViewModel
+
+<div class="container mt-4">
+
+    <div class="col-md-6 mx-auto">
+
+        <div class="card p-4 shadow">
+
+            <h3>Add Book</h3>
+
+            <form asp-action="Create"
+                  method="post"
+                  enctype="multipart/form-data">
+
+                <div asp-validation-summary="All" class="text-danger"></div>
+
+                <div class="mb-3">
+                    <label asp-for="Title"></label>
+                    <input asp-for="Title" class="form-control" />
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="Author"></label>
+                    <input asp-for="Author" class="form-control" />
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="Quantity"></label>
+                    <input asp-for="Quantity" class="form-control" />
+                </div>
+
+                <div class="mb-3">
+                    <label>Category</label>
+
+                    <select asp-for="CatagoryId"
+                            asp-items="Model.Categories"
+                            class="form-control">
+                    </select>
+                </div>
+
+                <div class="mb-3">
+                    <label>Book Image</label>
+                    <input asp-for="ImageUrl" type="file" class="form-control" />
+                </div>
+
+                <button class="btn btn-success">Save</button>
+
+                <a asp-action="Index" class="btn btn-secondary">
+                    Cancel
+                </a>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

@@ -25,6 +25,7 @@ builder.Services.AddScoped<IFileService, FileService>();
 builder.Services.AddScoped<IAuthService, AuthService>();
 builder.Services.AddScoped<IPasswordHasher<User>, PasswordHasher<User>>();
 builder.Services.AddScoped<ICatagoryService, CatagoryService>();
+builder.Services.AddScoped<IBookService, BookService>();
 
 //database connection
 builder.Services.AddDbContext<AppDbContext>(options =>

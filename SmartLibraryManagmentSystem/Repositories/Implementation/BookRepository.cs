@@ -46,5 +46,11 @@ namespace SmartLibraryManagmentSystem.Repositories.Implementation
                 .ToListAsync();
             return result;
         }
+        public async Task<IEnumerable<Book>> GetAllAyncWithCatagory()
+        {
+            var result = await _dbSet.Include(b => b.Catagory)
+                .ToListAsync();
+            return result;
+        }
     }
 }

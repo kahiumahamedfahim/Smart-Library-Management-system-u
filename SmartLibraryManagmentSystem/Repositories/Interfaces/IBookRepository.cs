@@ -8,5 +8,6 @@ namespace SmartLibraryManagmentSystem.Repositories.Interfaces
         Task<IEnumerable<Book>> SearchAsync(string ? keyword);
         Task<IEnumerable<Book>> GetPagedAsync(int page, int pageSize);
         Task<int> CountAsync();
+        Task<IEnumerable<Book>> GetAllAyncWithCatagory();
     }
 }

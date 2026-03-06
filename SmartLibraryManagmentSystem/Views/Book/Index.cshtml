@@ -1,0 +1,76 @@
+﻿@using SmartLibraryManagmentSystem.ViewModels.Book
+@model IEnumerable<BookListViewModel>
+
+@{
+    ViewData["Title"] = "Books";
+}
+
+<div class="container mt-4">
+
+    <div class="d-flex justify-content-between mb-3">
+        <h2>Books</h2>
+
+        @if (User.IsInRole("Admin"))
+        {
+            <a asp-action="Create" class="btn btn-primary">Add Book</a>
+        }
+    </div>
+
+    <div class="row">
+
+        @foreach (var book in Model)
+        {
+            <div class="col-md-3 mb-4">
+                <div class="card shadow-sm">
+
+                    <img src="@Url.Content(book.ImageUrl)"
+                         class="card-img-top"
+                         style="height:200px; object-fit:cover;" />
+                    <div class="card-body">
+
+                        <h5 class="card-title">@book.Title</h5>
+
+                        <p class="text-muted">@book.Author</p>
+
+                        <p>
+                            <strong>Category:</strong> @book.CatagoryName
+                        </p>
+
+                        <p>
+                            <strong>Available:</strong> @book.AvailableQuantity
+                        </p>
+
+                        <a asp-action="Details"
+                           asp-route-id="@book.Id"
+                           class="btn btn-sm btn-info">
+                            Details
+                        </a>
+
+                        @if (User.IsInRole("Admin"))
+                        {
+                            <a asp-action="Edit"
+                               asp-route-id="@book.Id"
+                               class="btn btn-sm btn-warning">
+                                Edit
+                            </a>
+
+                            <form asp-action="Delete"
+                                  asp-route-id="@book.Id"
+                                  method="post"
+                                  style="display:inline"
+                                  onsubmit="return confirm('Delete this book?')">
+
+                                <button class="btn btn-sm btn-danger">
+                                    Delete
+                                </button>
+
+                            </form>
+                        }
+
+                    </div>
+                </div>
+            </div>
+        }
+
+    </div>
+</div>
