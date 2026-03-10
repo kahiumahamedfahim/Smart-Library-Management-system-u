@@ -27,6 +27,8 @@ builder.Services.AddScoped<IPasswordHasher<User>, PasswordHasher<User>>();
 builder.Services.AddScoped<ICatagoryService, CatagoryService>();
 builder.Services.AddScoped<IBookService, BookService>();
 
+builder.Services.AddScoped<IBorrowService, BorrowService>();
+
 //database connection
 builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
