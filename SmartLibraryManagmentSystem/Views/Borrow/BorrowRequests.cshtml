@@ -1,0 +1,78 @@
+﻿@model IEnumerable<SmartLibraryManagmentSystem.ViewModels.Borrow.AdminBorrowListViewModel>
+
+<div class="container mt-4">
+
+    <h2 class="mb-4">Borrow Requests</h2>
+
+    <table class="table table-bordered table-striped">
+
+        <thead class="table-dark">
+            <tr>
+                <th>User</th>
+                <th>Book</th>
+                <th>Borrow Date</th>
+                <th>Due Date</th>
+                <th>Status</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+
+        <tbody>
+
+            @foreach (var item in Model)
+            {
+                <tr>
+
+                    <td>@item.UserName</td>
+
+                    <td>@item.BookTitle</td>
+
+                    <td>@item.BorrowDate.ToShortDateString()</td>
+
+                    <td>@item.DueDate.ToShortDateString()</td>
+
+                    <td>
+                        <span class="badge bg-warning">
+                            @item.Status
+                        </span>
+                    </td>
+
+                    <td>
+
+                        @if (item.Status == "Pending")
+                        {
+                            <a asp-controller="Borrow"
+                               asp-action="Approve"
+                               asp-route-borrowId="@item.BorrowId"
+                               class="btn btn-success btn-sm">
+                                Approve
+                            </a>
+
+                            <a asp-controller="Borrow"
+                               asp-action="Reject"
+                               asp-route-borrowId="@item.BorrowId"
+                               class="btn btn-danger btn-sm">
+                                Reject
+                            </a>
+                        }
+
+                        @if (item.Status == "ReturnRequested")
+                        {
+                            <a asp-controller="Borrow"
+                               asp-action="ConfirmReturn"
+                               asp-route-borrowId="@item.BorrowId"
+                               class="btn btn-primary btn-sm">
+                                Confirm Return
+                            </a>
+                        }
+
+                    </td>
+
+                </tr>
+            }
+
+        </tbody>
+
+    </table>
+
+</div>

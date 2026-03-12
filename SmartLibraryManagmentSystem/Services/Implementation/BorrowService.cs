@@ -18,16 +18,16 @@ namespace SmartLibraryManagmentSystem.Services.Implementation
             _logger = logger;
             _borrowRecordRepo = borrowRecordRepository;
         }
-        public async  Task<bool> ApproveBorrowAsync(int borrowId)
+        public async Task<bool> ApproveBorrowAsync(int borrowId)
         {
             var borrow = await _borrowRecordRepo.GetByIdAsync(borrowId);
-            if (borrow==null)
+            if (borrow == null)
             {
                 _logger.LogInformation("Borrow is empty");
                 return false;
             }
             var book = await _bookRepo.GetByIdAsync(borrow.Book.Id);
-            if(book.AvailableQuantity<=0)
+            if (book.AvailableQuantity <= 0)
             {
                 return false;
             }
@@ -40,18 +40,18 @@ namespace SmartLibraryManagmentSystem.Services.Implementation
 
         }
 
-        public async  Task<bool> ConfirmReturnAsync(int borrowId)
+        public async Task<bool> ConfirmReturnAsync(int borrowId)
         {
             var borrow = await _borrowRecordRepo.GetByIdAsync(borrowId);
-            if(borrow==null)
+            if (borrow == null)
             {
                 _logger.LogInformation("Borrow is empty here !");
                 return false;
             }
             var book = await _bookRepo.GetByIdAsync(borrow.BookId);
-            borrow.ReturnDate= DateTime.Now;
+            borrow.ReturnDate = DateTime.Now;
             borrow.Status = "Returned";
-            if(borrow.ReturnDate>borrow.DueDate)
+            if (borrow.ReturnDate > borrow.DueDate)
             {
                 var lateDays = (borrow.ReturnDate.Value - borrow.DueDate).Days;
                 borrow.FineAmount = lateDays * 10;
@@ -63,9 +63,9 @@ namespace SmartLibraryManagmentSystem.Services.Implementation
             return true;
         }
 
-        public async  Task<IEnumerable<UserBorrowListViewModel>> GetUserBorrowsAsync(int userId)
+        public async Task<IEnumerable<UserBorrowListViewModel>> GetUserBorrowsAsync(int userId)
         {
-           var borrows= await _borrowRecordRepo.GetUserBorrowsAsync(userId);
+            var borrows = await _borrowRecordRepo.GetUserBorrowsAsync(userId);
             return borrows.Select(br => new UserBorrowListViewModel
             {
                 BookTitle = br.Book.Title,
@@ -78,10 +78,10 @@ namespace SmartLibraryManagmentSystem.Services.Implementation
             });
         }
 
-        public async   Task<bool> RejectBorrowAsync(int borrowId)
+        public async Task<bool> RejectBorrowAsync(int borrowId)
         {
-            var borrow= await _borrowRecordRepo.GetByIdAsync(borrowId);
-            if(borrow==null)
+            var borrow = await _borrowRecordRepo.GetByIdAsync(borrowId);
+            if (borrow == null)
             {
                 _logger.LogInformation("Borrow Is Empty here !");
                 return false;
@@ -92,12 +92,12 @@ namespace SmartLibraryManagmentSystem.Services.Implementation
             return true;
         }
 
-        public async  Task<bool> RequestBorrowAsync(int UserId, int bookId)
+        public async Task<bool> RequestBorrowAsync(int UserId, int bookId)
         {
             try
             {
                 var book = await _bookRepo.GetByIdAsync(bookId);
-                if(book==null || book.AvailableQuantity<=0)
+                if (book == null || book.AvailableQuantity <= 0)
                 {
                     _logger.LogInformation("book is not availbale!");
                     return false;
@@ -116,7 +116,7 @@ namespace SmartLibraryManagmentSystem.Services.Implementation
                 return true;
 
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 _logger.LogError(ex, "Error Creating borrow request");
                 return false;
@@ -126,7 +126,7 @@ namespace SmartLibraryManagmentSystem.Services.Implementation
         public async Task<bool> RequestReturnAsync(int borrowId)
         {
             var borrow = await _borrowRecordRepo.GetByIdAsync(borrowId);
-            if(borrow==null)
+            if (borrow == null)
             {
                 return false;
             }
@@ -134,7 +134,25 @@ namespace SmartLibraryManagmentSystem.Services.Implementation
             _borrowRecordRepo.Update(borrow);
             await _borrowRecordRepo.SaveAsync();
             return true;
-            
+
+        }
+
+
+        public async Task<IEnumerable<AdminBorrowListViewModel>> GetAllBorrowRequestsAsync()
+        {
+            var borrows = await _borrowRecordRepo.GetAllBorrowRequestsAsync();
+
+            return borrows.Select(b => new AdminBorrowListViewModel
+            {
+                BorrowId = b.Id,
+                BookTitle = b.Book?.Title,
+                UserName = b.User?.Name,
+                BorrowDate = b.BorrowDate,
+                DueDate = b.DueDate,
+                //ReturnDate = b.ReturnDate,
+                //FineAmount = b.FineAmount,
+                Status = b.Status
+            }).ToList();
         }
     }
 }

@@ -45,16 +45,19 @@ namespace SmartLibraryManagmentSystem.Controllers
         }
         //borrow Request Page 
         [Authorize(Roles ="Admin")]
-        public IActionResult BorrowRequests()
+        [Authorize(Roles = "Admin")]
+        public async Task<IActionResult> BorrowRequests()
         {
-            return View();
+            var requests = await _borrowService.GetAllBorrowRequestsAsync();
+
+            return View(requests);
         }
         //approve Borrows
         [Authorize(Roles ="Admin")]
         public async Task<IActionResult> Approve (int borrwId)
         {
             await _borrowService.ApproveBorrowAsync(borrwId);
-            return RedirectToAction("BorrwRequests");
+            return RedirectToAction("BorrowRequests");
         }
         [Authorize(Roles ="Admin")]
         public async Task<IActionResult> Reject (int borrowId)

@@ -52,5 +52,14 @@ namespace SmartLibraryManagmentSystem.Repositories.Implementation
                 .ToListAsync();
             return result;
         }
+        public async Task<IEnumerable<BorrowRecord>> GetAllBorrowRequestsAsync()
+        {
+           var result = await _dbSet.Include(b=>b.Book)
+                .Include(b=>b.User)
+                .OrderByDescending(b => b.BorrowDate)
+        .ToListAsync();
+            return result;
+
+        }
     }
 }

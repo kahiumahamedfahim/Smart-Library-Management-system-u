@@ -10,5 +10,6 @@ namespace SmartLibraryManagmentSystem.Services.Interfaces
         Task<bool> RejectBorrowAsync(int borrowId);
         Task<bool> RequestReturnAsync(int borrowId);
         Task<bool> ConfirmReturnAsync(int borrowId);
+        Task<IEnumerable<AdminBorrowListViewModel>> GetAllBorrowRequestsAsync();
     }
 }

@@ -10,6 +10,6 @@ namespace SmartLibraryManagmentSystem.Repositories.Interfaces
         Task<int> CountActiveAsync();
         Task<decimal> GetTotalFineAsync();
         Task<int> GetMonthlyBorrowCountAsync(int month, int year);
-
+        Task<IEnumerable<BorrowRecord>> GetAllBorrowRequestsAsync();
     }
 }

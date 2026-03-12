@@ -2,6 +2,7 @@
 {
     public class UserBorrowListViewModel
     {
+        public int BorrowId { get; set; }
         public string BookTitle { get; set; }
         public DateTime BorrowDate { get; set; }
         public DateTime DueDate { get; set; }

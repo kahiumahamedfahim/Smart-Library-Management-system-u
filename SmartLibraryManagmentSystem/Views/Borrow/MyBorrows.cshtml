@@ -1,0 +1,70 @@
+﻿@model IEnumerable<SmartLibraryManagmentSystem.ViewModels.Borrow.UserBorrowListViewModel>
+
+<div class="container mt-4">
+
+    <h2 class="mb-4">My Borrowed Books</h2>
+
+    <table class="table table-bordered table-striped">
+
+        <thead class="table-dark">
+            <tr>
+                <th>Book</th>
+                <th>Borrow Date</th>
+                <th>Due Date</th>
+                <th>Return Date</th>
+                <th>Status</th>
+                <th>Fine</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+
+        <tbody>
+
+            @foreach (var item in Model)
+            {
+                <tr>
+
+                    <td>@item.BookTitle</td>
+
+                    <td>@item.BorrowDate.ToShortDateString()</td>
+
+                    <td>@item.DueDate.ToShortDateString()</td>
+
+                    <td>
+                        @(item.ReturnDate.HasValue
+                                            ? item.ReturnDate.Value.ToShortDateString()
+                                            : "-")
+                </td>
+
+                    <td>
+                        <span class="badge bg-info">
+                            @item.Status
+                        </span>
+                    </td>
+
+                    <td>
+                        @item.FineAmount
+                    </td>
+
+                    <td>
+
+                    @if (item.Status == "Borrowed")
+                        {
+                            <a asp-controller="Borrow"
+                               asp-action="RequestReturn"
+                               asp-route-borrowId="@item.BookTitle"
+                               class="btn btn-warning btn-sm">
+                                Request Return
+                            </a>
+                        }
+
+                    </td>
+
+                </tr>
+            }
+
+        </tbody>
+
+    </table>
+
+</div>
