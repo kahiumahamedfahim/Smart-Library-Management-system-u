@@ -3,6 +3,30 @@
   "WorkspaceRootPath": "D:\\asp.net core\\Projects\\Smart-Library-Management-system-u\\SmartLibraryManagmentSystem\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{338EA364-F1EB-4E2C-96FB-05871E99A8A7}|SmartLibraryManagmentSystem.csproj|d:\\asp.net core\\projects\\smart-library-management-system-u\\smartlibrarymanagmentsystem\\repositories\\implementation\\borrowrecordrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{338EA364-F1EB-4E2C-96FB-05871E99A8A7}|SmartLibraryManagmentSystem.csproj|solutionrelative:repositories\\implementation\\borrowrecordrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{338EA364-F1EB-4E2C-96FB-05871E99A8A7}|SmartLibraryManagmentSystem.csproj|d:\\asp.net core\\projects\\smart-library-management-system-u\\smartlibrarymanagmentsystem\\viewmodels\\borrow\\borrowrequestviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{338EA364-F1EB-4E2C-96FB-05871E99A8A7}|SmartLibraryManagmentSystem.csproj|solutionrelative:viewmodels\\borrow\\borrowrequestviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{338EA364-F1EB-4E2C-96FB-05871E99A8A7}|SmartLibraryManagmentSystem.csproj|d:\\asp.net core\\projects\\smart-library-management-system-u\\smartlibrarymanagmentsystem\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{338EA364-F1EB-4E2C-96FB-05871E99A8A7}|SmartLibraryManagmentSystem.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{338EA364-F1EB-4E2C-96FB-05871E99A8A7}|SmartLibraryManagmentSystem.csproj|d:\\asp.net core\\projects\\smart-library-management-system-u\\smartlibrarymanagmentsystem\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{338EA364-F1EB-4E2C-96FB-05871E99A8A7}|SmartLibraryManagmentSystem.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{338EA364-F1EB-4E2C-96FB-05871E99A8A7}|SmartLibraryManagmentSystem.csproj|d:\\asp.net core\\projects\\smart-library-management-system-u\\smartlibrarymanagmentsystem\\controllers\\borrowcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{338EA364-F1EB-4E2C-96FB-05871E99A8A7}|SmartLibraryManagmentSystem.csproj|solutionrelative:controllers\\borrowcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{338EA364-F1EB-4E2C-96FB-05871E99A8A7}|SmartLibraryManagmentSystem.csproj|d:\\asp.net core\\projects\\smart-library-management-system-u\\smartlibrarymanagmentsystem\\controllers\\bookcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{338EA364-F1EB-4E2C-96FB-05871E99A8A7}|SmartLibraryManagmentSystem.csproj|solutionrelative:controllers\\bookcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{338EA364-F1EB-4E2C-96FB-05871E99A8A7}|SmartLibraryManagmentSystem.csproj|d:\\asp.net core\\projects\\smart-library-management-system-u\\smartlibrarymanagmentsystem\\services\\implementation\\bookservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{338EA364-F1EB-4E2C-96FB-05871E99A8A7}|SmartLibraryManagmentSystem.csproj|solutionrelative:services\\implementation\\bookservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -15,24 +39,8 @@
       "RelativeMoniker": "D:0:0:{338EA364-F1EB-4E2C-96FB-05871E99A8A7}|SmartLibraryManagmentSystem.csproj|solutionrelative:services\\interfaces\\ibookservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{338EA364-F1EB-4E2C-96FB-05871E99A8A7}|SmartLibraryManagmentSystem.csproj|d:\\asp.net core\\projects\\smart-library-management-system-u\\smartlibrarymanagmentsystem\\controllers\\borrowcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{338EA364-F1EB-4E2C-96FB-05871E99A8A7}|SmartLibraryManagmentSystem.csproj|solutionrelative:controllers\\borrowcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{338EA364-F1EB-4E2C-96FB-05871E99A8A7}|SmartLibraryManagmentSystem.csproj|d:\\asp.net core\\projects\\smart-library-management-system-u\\smartlibrarymanagmentsystem\\controllers\\bookcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{338EA364-F1EB-4E2C-96FB-05871E99A8A7}|SmartLibraryManagmentSystem.csproj|solutionrelative:controllers\\bookcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{338EA364-F1EB-4E2C-96FB-05871E99A8A7}|SmartLibraryManagmentSystem.csproj|d:\\asp.net core\\projects\\smart-library-management-system-u\\smartlibrarymanagmentsystem\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{338EA364-F1EB-4E2C-96FB-05871E99A8A7}|SmartLibraryManagmentSystem.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{338EA364-F1EB-4E2C-96FB-05871E99A8A7}|SmartLibraryManagmentSystem.csproj|d:\\asp.net core\\projects\\smart-library-management-system-u\\smartlibrarymanagmentsystem\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{338EA364-F1EB-4E2C-96FB-05871E99A8A7}|SmartLibraryManagmentSystem.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{338EA364-F1EB-4E2C-96FB-05871E99A8A7}|SmartLibraryManagmentSystem.csproj|d:\\asp.net core\\projects\\smart-library-management-system-u\\smartlibrarymanagmentsystem\\repositories\\implementation\\borrowrecordrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{338EA364-F1EB-4E2C-96FB-05871E99A8A7}|SmartLibraryManagmentSystem.csproj|solutionrelative:repositories\\implementation\\borrowrecordrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{338EA364-F1EB-4E2C-96FB-05871E99A8A7}|SmartLibraryManagmentSystem.csproj|d:\\asp.net core\\projects\\smart-library-management-system-u\\smartlibrarymanagmentsystem\\repositories\\interfaces\\iborrowrecordrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -98,10 +106,6 @@
       "RelativeMoniker": "D:0:0:{338EA364-F1EB-4E2C-96FB-05871E99A8A7}|SmartLibraryManagmentSystem.csproj|solutionrelative:repositories\\interfaces\\icatagoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{338EA364-F1EB-4E2C-96FB-05871E99A8A7}|SmartLibraryManagmentSystem.csproj|d:\\asp.net core\\projects\\smart-library-management-system-u\\smartlibrarymanagmentsystem\\viewmodels\\borrow\\borrowrequestviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{338EA364-F1EB-4E2C-96FB-05871E99A8A7}|SmartLibraryManagmentSystem.csproj|solutionrelative:viewmodels\\borrow\\borrowrequestviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{338EA364-F1EB-4E2C-96FB-05871E99A8A7}|SmartLibraryManagmentSystem.csproj|d:\\asp.net core\\projects\\smart-library-management-system-u\\smartlibrarymanagmentsystem\\viewmodels\\borrow\\userborrowlistviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{338EA364-F1EB-4E2C-96FB-05871E99A8A7}|SmartLibraryManagmentSystem.csproj|solutionrelative:viewmodels\\borrow\\userborrowlistviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -152,10 +156,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{338EA364-F1EB-4E2C-96FB-05871E99A8A7}|SmartLibraryManagmentSystem.csproj|d:\\asp.net core\\projects\\smart-library-management-system-u\\smartlibrarymanagmentsystem\\data\\configuration\\bookconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{338EA364-F1EB-4E2C-96FB-05871E99A8A7}|SmartLibraryManagmentSystem.csproj|solutionrelative:data\\configuration\\bookconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{338EA364-F1EB-4E2C-96FB-05871E99A8A7}|SmartLibraryManagmentSystem.csproj|d:\\asp.net core\\projects\\smart-library-management-system-u\\smartlibrarymanagmentsystem\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{338EA364-F1EB-4E2C-96FB-05871E99A8A7}|SmartLibraryManagmentSystem.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{338EA364-F1EB-4E2C-96FB-05871E99A8A7}|SmartLibraryManagmentSystem.csproj|d:\\asp.net core\\projects\\smart-library-management-system-u\\smartlibrarymanagmentsystem\\controllers\\emailtestcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -366,7 +366,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Bookmark",
@@ -382,7 +382,113 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\asp.net core\\Projects\\Smart-Library-Management-system-u\\SmartLibraryManagmentSystem\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
+              "ToolTip": "D:\\asp.net core\\Projects\\Smart-Library-Management-system-u\\SmartLibraryManagmentSystem\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAACEAAAAAAAAAAAAAADwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-06T20:06:48.686Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "BorrowController.cs",
+              "DocumentMoniker": "D:\\asp.net core\\Projects\\Smart-Library-Management-system-u\\SmartLibraryManagmentSystem\\Controllers\\BorrowController.cs",
+              "RelativeDocumentMoniker": "Controllers\\BorrowController.cs",
+              "ToolTip": "D:\\asp.net core\\Projects\\Smart-Library-Management-system-u\\SmartLibraryManagmentSystem\\Controllers\\BorrowController.cs",
+              "RelativeToolTip": "Controllers\\BorrowController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADkAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-10T19:29:59.187Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "D:\\asp.net core\\Projects\\Smart-Library-Management-system-u\\SmartLibraryManagmentSystem\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
+              "ToolTip": "D:\\asp.net core\\Projects\\Smart-Library-Management-system-u\\SmartLibraryManagmentSystem\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Controllers\\HomeController.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAA3wB0AAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-06T19:25:42.184Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "BorrowRequestViewModel.cs",
+              "DocumentMoniker": "D:\\asp.net core\\Projects\\Smart-Library-Management-system-u\\SmartLibraryManagmentSystem\\ViewModels\\Borrow\\BorrowRequestViewModel.cs",
+              "RelativeDocumentMoniker": "ViewModels\\Borrow\\BorrowRequestViewModel.cs",
+              "ToolTip": "D:\\asp.net core\\Projects\\Smart-Library-Management-system-u\\SmartLibraryManagmentSystem\\ViewModels\\Borrow\\BorrowRequestViewModel.cs",
+              "RelativeToolTip": "ViewModels\\Borrow\\BorrowRequestViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-28T15:17:30.841Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "BorrowRecordRepository.cs",
+              "DocumentMoniker": "D:\\asp.net core\\Projects\\Smart-Library-Management-system-u\\SmartLibraryManagmentSystem\\Repositories\\Implementation\\BorrowRecordRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\Implementation\\BorrowRecordRepository.cs",
+              "ToolTip": "D:\\asp.net core\\Projects\\Smart-Library-Management-system-u\\SmartLibraryManagmentSystem\\Repositories\\Implementation\\BorrowRecordRepository.cs*",
+              "RelativeToolTip": "Repositories\\Implementation\\BorrowRecordRepository.cs*",
+              "ViewState": "AgIAAEAAAAAAAAAAAAAwwE4AAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-28T12:31:00.676Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "BookController.cs",
+              "DocumentMoniker": "D:\\asp.net core\\Projects\\Smart-Library-Management-system-u\\SmartLibraryManagmentSystem\\Controllers\\BookController.cs",
+              "RelativeDocumentMoniker": "Controllers\\BookController.cs",
+              "ToolTip": "D:\\asp.net core\\Projects\\Smart-Library-Management-system-u\\SmartLibraryManagmentSystem\\Controllers\\BookController.cs",
+              "RelativeToolTip": "Controllers\\BookController.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAgwBsAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-05T18:10:17.907Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "IBorrowService.cs",
+              "DocumentMoniker": "D:\\asp.net core\\Projects\\Smart-Library-Management-system-u\\SmartLibraryManagmentSystem\\Services\\Interfaces\\IBorrowService.cs",
+              "RelativeDocumentMoniker": "Services\\Interfaces\\IBorrowService.cs",
+              "ToolTip": "D:\\asp.net core\\Projects\\Smart-Library-Management-system-u\\SmartLibraryManagmentSystem\\Services\\Interfaces\\IBorrowService.cs",
+              "RelativeToolTip": "Services\\Interfaces\\IBorrowService.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAxwAwAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-10T18:37:13.491Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "IBookService.cs",
+              "DocumentMoniker": "D:\\asp.net core\\Projects\\Smart-Library-Management-system-u\\SmartLibraryManagmentSystem\\Services\\Interfaces\\IBookService.cs",
+              "RelativeDocumentMoniker": "Services\\Interfaces\\IBookService.cs",
+              "ToolTip": "D:\\asp.net core\\Projects\\Smart-Library-Management-system-u\\SmartLibraryManagmentSystem\\Services\\Interfaces\\IBookService.cs",
+              "RelativeToolTip": "Services\\Interfaces\\IBookService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAABHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-05T16:29:06.881Z"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "BookService.cs",
               "DocumentMoniker": "D:\\asp.net core\\Projects\\Smart-Library-Management-system-u\\SmartLibraryManagmentSystem\\Services\\Implementation\\BookService.cs",
               "RelativeDocumentMoniker": "Services\\Implementation\\BookService.cs",
@@ -395,72 +501,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "IBookService.cs",
-              "DocumentMoniker": "D:\\asp.net core\\Projects\\Smart-Library-Management-system-u\\SmartLibraryManagmentSystem\\Services\\Interfaces\\IBookService.cs",
-              "RelativeDocumentMoniker": "Services\\Interfaces\\IBookService.cs",
-              "ToolTip": "D:\\asp.net core\\Projects\\Smart-Library-Management-system-u\\SmartLibraryManagmentSystem\\Services\\Interfaces\\IBookService.cs",
-              "RelativeToolTip": "Services\\Interfaces\\IBookService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAABHAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-05T16:29:06.881Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "IBorrowService.cs",
-              "DocumentMoniker": "D:\\asp.net core\\Projects\\Smart-Library-Management-system-u\\SmartLibraryManagmentSystem\\Services\\Interfaces\\IBorrowService.cs",
-              "RelativeDocumentMoniker": "Services\\Interfaces\\IBorrowService.cs",
-              "ToolTip": "D:\\asp.net core\\Projects\\Smart-Library-Management-system-u\\SmartLibraryManagmentSystem\\Services\\Interfaces\\IBorrowService.cs",
-              "RelativeToolTip": "Services\\Interfaces\\IBorrowService.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAAAxwAwAAAAzAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-10T18:37:13.491Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "BookController.cs",
-              "DocumentMoniker": "D:\\asp.net core\\Projects\\Smart-Library-Management-system-u\\SmartLibraryManagmentSystem\\Controllers\\BookController.cs",
-              "RelativeDocumentMoniker": "Controllers\\BookController.cs",
-              "ToolTip": "D:\\asp.net core\\Projects\\Smart-Library-Management-system-u\\SmartLibraryManagmentSystem\\Controllers\\BookController.cs",
-              "RelativeToolTip": "Controllers\\BookController.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAAgwCMAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-05T18:10:17.907Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\asp.net core\\Projects\\Smart-Library-Management-system-u\\SmartLibraryManagmentSystem\\Views\\Home\\Index.cshtml",
-              "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
-              "ToolTip": "D:\\asp.net core\\Projects\\Smart-Library-Management-system-u\\SmartLibraryManagmentSystem\\Views\\Home\\Index.cshtml",
-              "RelativeToolTip": "Views\\Home\\Index.cshtml",
-              "ViewState": "AgIAACoAAAAAAAAAAAAQwEQAAAAGAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-03-06T20:06:48.686Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "BorrowController.cs",
-              "DocumentMoniker": "D:\\asp.net core\\Projects\\Smart-Library-Management-system-u\\SmartLibraryManagmentSystem\\Controllers\\BorrowController.cs",
-              "RelativeDocumentMoniker": "Controllers\\BorrowController.cs",
-              "ToolTip": "D:\\asp.net core\\Projects\\Smart-Library-Management-system-u\\SmartLibraryManagmentSystem\\Controllers\\BorrowController.cs",
-              "RelativeToolTip": "Controllers\\BorrowController.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAiwDoAAAA9AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-10T19:29:59.187Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 9,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "D:\\asp.net core\\Projects\\Smart-Library-Management-system-u\\SmartLibraryManagmentSystem\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
@@ -468,25 +509,11 @@
               "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
               "ViewState": "AgIAABcAAAAAAAAAAAAuwCoAAAA1AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-03-01T17:10:16.727Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-01T17:10:16.727Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "BorrowRecordRepository.cs",
-              "DocumentMoniker": "D:\\asp.net core\\Projects\\Smart-Library-Management-system-u\\SmartLibraryManagmentSystem\\Repositories\\Implementation\\BorrowRecordRepository.cs",
-              "RelativeDocumentMoniker": "Repositories\\Implementation\\BorrowRecordRepository.cs",
-              "ToolTip": "D:\\asp.net core\\Projects\\Smart-Library-Management-system-u\\SmartLibraryManagmentSystem\\Repositories\\Implementation\\BorrowRecordRepository.cs",
-              "RelativeToolTip": "Repositories\\Implementation\\BorrowRecordRepository.cs",
-              "ViewState": "AgIAADcAAAAAAAAAAAAwwEAAAAAHAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-28T12:31:00.676Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 10,
               "Title": "IBorrowRecordRepository.cs",
               "DocumentMoniker": "D:\\asp.net core\\Projects\\Smart-Library-Management-system-u\\SmartLibraryManagmentSystem\\Repositories\\Interfaces\\IBorrowRecordRepository.cs",
               "RelativeDocumentMoniker": "Repositories\\Interfaces\\IBorrowRecordRepository.cs",
@@ -494,16 +521,11 @@
               "RelativeToolTip": "Repositories\\Interfaces\\IBorrowRecordRepository.cs",
               "ViewState": "AgIAAAUAAAAAAAAAAAAmwA0AAABAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-28T12:26:23.821Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+              "WhenOpened": "2026-02-28T12:26:23.821Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 12,
               "Title": "Details.cshtml",
               "DocumentMoniker": "D:\\asp.net core\\Projects\\Smart-Library-Management-system-u\\SmartLibraryManagmentSystem\\Views\\Book\\Details.cshtml",
               "RelativeDocumentMoniker": "Views\\Book\\Details.cshtml",
@@ -511,12 +533,11 @@
               "RelativeToolTip": "Views\\Book\\Details.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAA1AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-03-05T18:59:02.562Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-05T18:59:02.562Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 14,
               "Title": "BorrowService.cs",
               "DocumentMoniker": "D:\\asp.net core\\Projects\\Smart-Library-Management-system-u\\SmartLibraryManagmentSystem\\Services\\Implementation\\BorrowService.cs",
               "RelativeDocumentMoniker": "Services\\Implementation\\BorrowService.cs",
@@ -524,12 +545,11 @@
               "RelativeToolTip": "Services\\Implementation\\BorrowService.cs",
               "ViewState": "AgIAAAgAAAAAAAAAAAAxwGoAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-10T18:40:11.77Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-10T18:40:11.77Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 15,
               "Title": "Book.cs",
               "DocumentMoniker": "D:\\asp.net core\\Projects\\Smart-Library-Management-system-u\\SmartLibraryManagmentSystem\\Models\\Entities\\Book.cs",
               "RelativeDocumentMoniker": "Models\\Entities\\Book.cs",
@@ -537,12 +557,11 @@
               "RelativeToolTip": "Models\\Entities\\Book.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-27T12:29:07.42Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-27T12:29:07.42Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 16,
               "Title": "BookEditViewModel.cs",
               "DocumentMoniker": "D:\\asp.net core\\Projects\\Smart-Library-Management-system-u\\SmartLibraryManagmentSystem\\ViewModels\\Book\\BookEditViewModel.cs",
               "RelativeDocumentMoniker": "ViewModels\\Book\\BookEditViewModel.cs",
@@ -550,12 +569,11 @@
               "RelativeToolTip": "ViewModels\\Book\\BookEditViewModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAqwBEAAABEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-28T13:45:10.107Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-28T13:45:10.107Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 11,
               "Title": "Index.cshtml",
               "DocumentMoniker": "D:\\asp.net core\\Projects\\Smart-Library-Management-system-u\\SmartLibraryManagmentSystem\\Views\\Book\\Index.cshtml",
               "RelativeDocumentMoniker": "Views\\Book\\Index.cshtml",
@@ -563,12 +581,11 @@
               "RelativeToolTip": "Views\\Book\\Index.cshtml",
               "ViewState": "AgIAAB4AAAAAAAAAAAAAABIAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-03-05T18:57:20.984Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-05T18:57:20.984Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 13,
               "Title": "BookListViewModel.cs",
               "DocumentMoniker": "D:\\asp.net core\\Projects\\Smart-Library-Management-system-u\\SmartLibraryManagmentSystem\\ViewModels\\Book\\BookListViewModel.cs",
               "RelativeDocumentMoniker": "ViewModels\\Book\\BookListViewModel.cs",
@@ -576,12 +593,11 @@
               "RelativeToolTip": "ViewModels\\Book\\BookListViewModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-28T13:50:34.08Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-28T13:50:34.08Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 17,
               "Title": "GenericRepository.cs",
               "DocumentMoniker": "D:\\asp.net core\\Projects\\Smart-Library-Management-system-u\\SmartLibraryManagmentSystem\\Repositories\\Implementation\\GenericRepository.cs",
               "RelativeDocumentMoniker": "Repositories\\Implementation\\GenericRepository.cs",
@@ -589,12 +605,11 @@
               "RelativeToolTip": "Repositories\\Implementation\\GenericRepository.cs",
               "ViewState": "AgIAAAYAAAAAAAAAAAA+wAwAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-27T21:13:55.233Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-27T21:13:55.233Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 18,
               "Title": "EmailOtpRepository.cs",
               "DocumentMoniker": "D:\\asp.net core\\Projects\\Smart-Library-Management-system-u\\SmartLibraryManagmentSystem\\Repositories\\Implementation\\EmailOtpRepository.cs",
               "RelativeDocumentMoniker": "Repositories\\Implementation\\EmailOtpRepository.cs",
@@ -602,12 +617,11 @@
               "RelativeToolTip": "Repositories\\Implementation\\EmailOtpRepository.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAABAAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-28T09:11:03.731Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-28T09:11:03.731Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 19,
               "Title": "BookRepository.cs",
               "DocumentMoniker": "D:\\asp.net core\\Projects\\Smart-Library-Management-system-u\\SmartLibraryManagmentSystem\\Repositories\\Implementation\\BookRepository.cs",
               "RelativeDocumentMoniker": "Repositories\\Implementation\\BookRepository.cs",
@@ -615,12 +629,11 @@
               "RelativeToolTip": "Repositories\\Implementation\\BookRepository.cs",
               "ViewState": "AgIAACIAAAAAAAAAAAAkwC4AAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-28T09:28:26.396Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-28T09:28:26.396Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 20,
               "Title": "CatagoryRepository.cs",
               "DocumentMoniker": "D:\\asp.net core\\Projects\\Smart-Library-Management-system-u\\SmartLibraryManagmentSystem\\Repositories\\Implementation\\CatagoryRepository.cs",
               "RelativeDocumentMoniker": "Repositories\\Implementation\\CatagoryRepository.cs",
@@ -628,12 +641,11 @@
               "RelativeToolTip": "Repositories\\Implementation\\CatagoryRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-28T09:21:33.151Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-28T09:21:33.151Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 21,
               "Title": "IBookRepository.cs",
               "DocumentMoniker": "D:\\asp.net core\\Projects\\Smart-Library-Management-system-u\\SmartLibraryManagmentSystem\\Repositories\\Interfaces\\IBookRepository.cs",
               "RelativeDocumentMoniker": "Repositories\\Interfaces\\IBookRepository.cs",
@@ -641,12 +653,11 @@
               "RelativeToolTip": "Repositories\\Interfaces\\IBookRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-28T09:24:20.401Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-28T09:24:20.401Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 22,
               "Title": "BorrowController.cs",
               "DocumentMoniker": "C:\\Users\\kahiu\\AppData\\Local\\SourceServer\\dd144785aa2f17ccb3b9e5c94bf653abcd53367629a817fc392735a18703d682\\SmartLibraryManagmentSystem\\Controllers\\BorrowController.cs",
               "ToolTip": "C:\\Users\\kahiu\\AppData\\Local\\SourceServer\\dd144785aa2f17ccb3b9e5c94bf653abcd53367629a817fc392735a18703d682\\SmartLibraryManagmentSystem\\Controllers\\BorrowController.cs [Read Only]",
@@ -657,7 +668,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 23,
               "Title": "BorrowRequests.cshtml",
               "DocumentMoniker": "D:\\asp.net core\\Projects\\Smart-Library-Management-system-u\\SmartLibraryManagmentSystem\\Views\\Borrow\\BorrowRequests.cshtml",
               "RelativeDocumentMoniker": "Views\\Borrow\\BorrowRequests.cshtml",
@@ -669,7 +680,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 24,
               "Title": "AdminBorrowListViewModel.cs",
               "DocumentMoniker": "D:\\asp.net core\\Projects\\Smart-Library-Management-system-u\\SmartLibraryManagmentSystem\\ViewModels\\Borrow\\AdminBorrowListViewModel.cs",
               "RelativeDocumentMoniker": "ViewModels\\Borrow\\AdminBorrowListViewModel.cs",
@@ -681,7 +692,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 25,
               "Title": "ICatagoryRepository.cs",
               "DocumentMoniker": "D:\\asp.net core\\Projects\\Smart-Library-Management-system-u\\SmartLibraryManagmentSystem\\Repositories\\Interfaces\\ICatagoryRepository.cs",
               "RelativeDocumentMoniker": "Repositories\\Interfaces\\ICatagoryRepository.cs",
@@ -693,19 +704,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "BorrowRequestViewModel.cs",
-              "DocumentMoniker": "D:\\asp.net core\\Projects\\Smart-Library-Management-system-u\\SmartLibraryManagmentSystem\\ViewModels\\Borrow\\BorrowRequestViewModel.cs",
-              "RelativeDocumentMoniker": "ViewModels\\Borrow\\BorrowRequestViewModel.cs",
-              "ToolTip": "D:\\asp.net core\\Projects\\Smart-Library-Management-system-u\\SmartLibraryManagmentSystem\\ViewModels\\Borrow\\BorrowRequestViewModel.cs",
-              "RelativeToolTip": "ViewModels\\Borrow\\BorrowRequestViewModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-28T15:17:30.841Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 26,
               "Title": "UserBorrowListViewModel.cs",
               "DocumentMoniker": "D:\\asp.net core\\Projects\\Smart-Library-Management-system-u\\SmartLibraryManagmentSystem\\ViewModels\\Borrow\\UserBorrowListViewModel.cs",
               "RelativeDocumentMoniker": "ViewModels\\Borrow\\UserBorrowListViewModel.cs",
@@ -717,7 +716,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 29,
               "Title": "_ViewImports.cshtml",
               "DocumentMoniker": "D:\\asp.net core\\Projects\\Smart-Library-Management-system-u\\SmartLibraryManagmentSystem\\Views\\_ViewImports.cshtml",
               "RelativeDocumentMoniker": "Views\\_ViewImports.cshtml",
@@ -729,7 +728,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 27,
               "Title": "MyBorrows.cshtml",
               "DocumentMoniker": "D:\\asp.net core\\Projects\\Smart-Library-Management-system-u\\SmartLibraryManagmentSystem\\Views\\Borrow\\MyBorrows.cshtml",
               "RelativeDocumentMoniker": "Views\\Borrow\\MyBorrows.cshtml",
@@ -741,7 +740,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 28,
               "Title": "_ViewStart.cshtml",
               "DocumentMoniker": "D:\\asp.net core\\Projects\\Smart-Library-Management-system-u\\SmartLibraryManagmentSystem\\Views\\_ViewStart.cshtml",
               "RelativeDocumentMoniker": "Views\\_ViewStart.cshtml",
@@ -753,7 +752,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 31,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\asp.net core\\Projects\\Smart-Library-Management-system-u\\SmartLibraryManagmentSystem\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
@@ -765,7 +764,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 30,
               "Title": "appsettings.Development.json",
               "DocumentMoniker": "D:\\asp.net core\\Projects\\Smart-Library-Management-system-u\\SmartLibraryManagmentSystem\\appsettings.Development.json",
               "RelativeDocumentMoniker": "appsettings.Development.json",
@@ -802,18 +801,6 @@
             {
               "$type": "Document",
               "DocumentIndex": 38,
-              "Title": "HomeController.cs",
-              "DocumentMoniker": "D:\\asp.net core\\Projects\\Smart-Library-Management-system-u\\SmartLibraryManagmentSystem\\Controllers\\HomeController.cs",
-              "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
-              "ToolTip": "D:\\asp.net core\\Projects\\Smart-Library-Management-system-u\\SmartLibraryManagmentSystem\\Controllers\\HomeController.cs",
-              "RelativeToolTip": "Controllers\\HomeController.cs",
-              "ViewState": "AgIAABYAAAAAAAAAAAAowBgAAAAfAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-06T19:25:42.184Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 37,
               "Title": "BookConfiguration.cs",
               "DocumentMoniker": "D:\\asp.net core\\Projects\\Smart-Library-Management-system-u\\SmartLibraryManagmentSystem\\Data\\Configuration\\BookConfiguration.cs",
               "RelativeDocumentMoniker": "Data\\Configuration\\BookConfiguration.cs",
@@ -825,7 +812,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 37,
               "Title": "BorrwRecordConfiguration.cs",
               "DocumentMoniker": "D:\\asp.net core\\Projects\\Smart-Library-Management-system-u\\SmartLibraryManagmentSystem\\Data\\Configuration\\BorrwRecordConfiguration.cs",
               "RelativeDocumentMoniker": "Data\\Configuration\\BorrwRecordConfiguration.cs",
@@ -837,7 +824,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 36,
               "Title": "catagoryConfiguration.cs",
               "DocumentMoniker": "D:\\asp.net core\\Projects\\Smart-Library-Management-system-u\\SmartLibraryManagmentSystem\\Data\\Configuration\\catagoryConfiguration.cs",
               "RelativeDocumentMoniker": "Data\\Configuration\\catagoryConfiguration.cs",
@@ -849,7 +836,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 32,
               "Title": "appsettings.json",
               "DocumentMoniker": "D:\\asp.net core\\Projects\\Smart-Library-Management-system-u\\SmartLibraryManagmentSystem\\appsettings.json",
               "RelativeDocumentMoniker": "appsettings.json",
@@ -861,7 +848,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 33,
               "Title": "EmailService.cs",
               "DocumentMoniker": "D:\\asp.net core\\Projects\\Smart-Library-Management-system-u\\SmartLibraryManagmentSystem\\Services\\Implementation\\EmailService.cs",
               "RelativeDocumentMoniker": "Services\\Implementation\\EmailService.cs",
@@ -886,7 +873,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 35,
               "Title": "EmaIlOtpConfiguration.cs",
               "DocumentMoniker": "D:\\asp.net core\\Projects\\Smart-Library-Management-system-u\\SmartLibraryManagmentSystem\\Data\\Configuration\\EmaIlOtpConfiguration.cs",
               "RelativeDocumentMoniker": "Data\\Configuration\\EmaIlOtpConfiguration.cs",
@@ -898,7 +885,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 34,
               "Title": "UserConfiguration.cs",
               "DocumentMoniker": "D:\\asp.net core\\Projects\\Smart-Library-Management-system-u\\SmartLibraryManagmentSystem\\Data\\Configuration\\UserConfiguration.cs",
               "RelativeDocumentMoniker": "Data\\Configuration\\UserConfiguration.cs",

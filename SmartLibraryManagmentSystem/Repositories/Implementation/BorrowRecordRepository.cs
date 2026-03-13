@@ -75,7 +75,8 @@ namespace SmartLibraryManagmentSystem.Repositories.Implementation
             return latestBorrow.Status == "Requsted"
                 || latestBorrow.Status == "Approved"
                 || latestBorrow.Status == "Borrowed"
-                || latestBorrow.Status == "Return Request";
+                || latestBorrow.Status == "Return Request"
+                || latestBorrow.Status=="Pending";
 
 
         }
