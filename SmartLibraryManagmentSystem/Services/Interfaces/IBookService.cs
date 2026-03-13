@@ -8,6 +8,7 @@ namespace SmartLibraryManagmentSystem.Services.Interfaces
         Task<BookDetialsViewModel> GetBookById(int id);
         Task<bool> CreateBookAsync(BookCreateViewModel model);
         Task<bool> UpdateBookAsync(BookUpdateViewModel model);
+        Task<IEnumerable<BookListViewModel>> GetBooksAsync(int userId);
         Task<bool> DeleteAsync(int id);
 
     }

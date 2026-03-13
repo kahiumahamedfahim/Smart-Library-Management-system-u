@@ -92,29 +92,43 @@ namespace SmartLibraryManagmentSystem.Services.Implementation
             return true;
         }
 
-        public async Task<bool> RequestBorrowAsync(int UserId, int bookId)
+        public async Task<bool> RequestBorrowAsync(int userId, int bookId)
         {
             try
             {
                 var book = await _bookRepo.GetByIdAsync(bookId);
+
                 if (book == null || book.AvailableQuantity <= 0)
                 {
-                    _logger.LogInformation("book is not availbale!");
+                    _logger.LogInformation("Book is not available!");
                     return false;
                 }
+
+               
+                var alreadyBorrowed = await _borrowRecordRepo
+                    .HasActiveBorrowAsync(userId, bookId);
+
+                if (alreadyBorrowed)
+                {
+                    _logger.LogInformation("User already borrowed this book.");
+                    return false;
+                }
+
                 var borrow = new BorrowRecord
                 {
-                    UserId = UserId,
+                    UserId = userId,
                     BookId = bookId,
                     BorrowDate = DateTime.Now,
                     DueDate = DateTime.Now.AddDays(7),
                     Status = "Pending"
                 };
+
                 await _borrowRecordRepo.AddAsync(borrow);
                 await _borrowRecordRepo.SaveAsync();
-                _logger.LogInformation("Borrow Request created for {BookId}", bookId);
-                return true;
 
+                _logger.LogInformation("Borrow Request created for BookId {BookId}", bookId);
+
+                return true;
             }
             catch (Exception ex)
             {

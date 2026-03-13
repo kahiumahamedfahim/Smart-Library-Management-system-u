@@ -1,8 +1,9 @@
-using System.Diagnostics;
-using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using SmartLibraryManagmentSystem.Models;
 using SmartLibraryManagmentSystem.Services.Interfaces;
+using System.Diagnostics;
+using System.Security.Claims;
+using System.Threading.Tasks;
 
 namespace SmartLibraryManagmentSystem.Controllers
 {
@@ -21,7 +22,13 @@ namespace SmartLibraryManagmentSystem.Controllers
 
         public async Task<IActionResult> Index()
         {
-            var books= await _bookService.GetAllAsync();
+            int userId = 0;
+            if (User.Identity.IsAuthenticated)
+            {
+                userId = int.Parse(User.FindFirst(ClaimTypes.NameIdentifier).Value);
+            }
+            var books = await _bookService.GetBooksAsync(userId);
+
             return View(books);
         }
 

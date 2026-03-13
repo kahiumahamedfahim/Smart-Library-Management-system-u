@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Metadata;
 using SmartLibraryManagmentSystem.Data;
 using SmartLibraryManagmentSystem.Models.Entities;
 using SmartLibraryManagmentSystem.Repositories.Interfaces;
@@ -54,11 +55,28 @@ namespace SmartLibraryManagmentSystem.Repositories.Implementation
         }
         public async Task<IEnumerable<BorrowRecord>> GetAllBorrowRequestsAsync()
         {
-           var result = await _dbSet.Include(b=>b.Book)
-                .Include(b=>b.User)
-                .OrderByDescending(b => b.BorrowDate)
-        .ToListAsync();
+            var result = await _dbSet.Include(b => b.Book)
+                 .Include(b => b.User)
+                 .OrderByDescending(b => b.BorrowDate)
+         .ToListAsync();
             return result;
+
+        }
+        public async Task<bool> HasActiveBorrowAsync(int userId, int bookId)
+        {
+            var latestBorrow = await _dbSet.Where(b => b.UserId == userId
+            && b.BookId == bookId)
+                 .OrderByDescending(b => b.BorrowDate)
+                 .FirstOrDefaultAsync();
+            if (latestBorrow == null)
+            {
+                return false;
+            }
+            return latestBorrow.Status == "Requsted"
+                || latestBorrow.Status == "Approved"
+                || latestBorrow.Status == "Borrowed"
+                || latestBorrow.Status == "Return Request";
+
 
         }
     }

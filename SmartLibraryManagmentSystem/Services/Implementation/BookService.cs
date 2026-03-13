@@ -12,16 +12,19 @@ namespace SmartLibraryManagmentSystem.Services.Implementation
         private readonly ICatagoryRepository _catagoryRepo;
         private readonly IFileService _fileService;
         private readonly ILogger<BookService> _logger;
+        private readonly IBorrowRecordRepository _borrowRecordRepo;
         public BookService(IBookRepository bookRepository,
             ICatagoryRepository catagoryRepository,
             IFileService fileService,
-            ILogger<BookService> logger
+            ILogger<BookService> logger,
+            IBorrowRecordRepository borrowRecordRepository 
             )
         {
             _bookRepo = bookRepository;
             _catagoryRepo = catagoryRepository;
             _fileService = fileService;
             _logger = logger;
+            _borrowRecordRepo= borrowRecordRepository;
         }
 
         public async Task<bool> CreateBookAsync(BookCreateViewModel model)
@@ -74,6 +77,33 @@ namespace SmartLibraryManagmentSystem.Services.Implementation
             }
         }
 
+        public async Task<IEnumerable<BookListViewModel>> GetBooksAsync(int userId)
+        {
+            var books = await _bookRepo.GetAllAyncWithCatagory();
+
+            var result = new List<BookListViewModel>();
+
+            foreach (var book in books)
+            {
+                var activeBorrow = await _borrowRecordRepo
+                    .HasActiveBorrowAsync(userId, book.Id);
+
+                result.Add(new BookListViewModel
+                {
+                    Id = book.Id,
+                    Title = book.Title,
+                    Author = book.Author,
+                    AvailableQuantity = book.AvailableQuantity,
+                    ImageUrl = book.ImageUrl,
+                    CatagoryName = book.Catagory?.Name ?? "Unknown",
+
+                    // ⭐ Borrow button control
+                    CanBorrow = !activeBorrow
+                });
+            }
+
+            return result;
+        }
         public async  Task<IEnumerable<BookListViewModel>> GetAllAsync()
         {
             var books = await _bookRepo.GetAllAyncWithCatagory();

@@ -1,11 +1,12 @@
 ﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using SmartLibraryManagmentSystem.Repositories.Interfaces;
 using SmartLibraryManagmentSystem.Services.Interfaces;
 using SmartLibraryManagmentSystem.ViewModels.Book;
 using System.Runtime.CompilerServices;
-using Microsoft.AspNetCore.Http;
+using System.Security.Claims;
 
 namespace SmartLibraryManagmentSystem.Controllers
 {
@@ -26,7 +27,13 @@ namespace SmartLibraryManagmentSystem.Controllers
         //book list
         public async Task <IActionResult> Index()
         {
-           var books= await _bookService.GetAllAsync();
+            int userId = 0;
+            if(User.Identity.IsAuthenticated)
+            {
+                userId= int.Parse(User.FindFirst(ClaimTypes.NameIdentifier).Value);
+            }
+            var books = await _bookService.GetBooksAsync(userId);
+
             return View(books);
         }
         //Book Details

@@ -40,12 +40,21 @@
 
                         @if (User.IsInRole("User"))
                         {
-                            <a asp-controller="Borrow"
-                               asp-action="Request"
-                               asp-route-bookId="@book.Id"
-                               class="btn btn-sm btn-success">
-                                Borrow
-                            </a>
+                            if (book.CanBorrow)
+                            {
+                                <a asp-controller="Borrow"
+                                   asp-action="Request"
+                                   asp-route-bookId="@book.Id"
+                                   class="btn btn-sm btn-success">
+                                    Borrow
+                                </a>
+                            }
+                            else
+                            {
+                                <button class="btn btn-sm btn-secondary" disabled>
+                                    Requested
+                                </button>
+                            }
                         }
 
                     </div>
