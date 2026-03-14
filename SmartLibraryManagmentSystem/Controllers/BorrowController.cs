@@ -54,9 +54,9 @@ namespace SmartLibraryManagmentSystem.Controllers
         }
         //approve Borrows
         [Authorize(Roles ="Admin")]
-        public async Task<IActionResult> Approve (int borrwId)
+        public async Task<IActionResult> Approve (int borrowId)
         {
-            await _borrowService.ApproveBorrowAsync(borrwId);
+            await _borrowService.ApproveBorrowAsync(borrowId);
             return RedirectToAction("BorrowRequests");
         }
         [Authorize(Roles ="Admin")]

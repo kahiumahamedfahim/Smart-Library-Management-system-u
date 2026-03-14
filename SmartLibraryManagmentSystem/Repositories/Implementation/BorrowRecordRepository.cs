@@ -76,8 +76,16 @@ namespace SmartLibraryManagmentSystem.Repositories.Implementation
                 || latestBorrow.Status == "Approved"
                 || latestBorrow.Status == "Borrowed"
                 || latestBorrow.Status == "Return Request"
-                || latestBorrow.Status=="Pending";
+                || latestBorrow.Status == "Pending";
 
+
+        }
+        public async Task<BorrowRecord> GetByIdWithBook(int borrowId)
+        {
+            var result = await _dbSet.Where(b => b.Id == borrowId)
+                .Include(b => b.Book)
+                .FirstOrDefaultAsync();
+            return result;
 
         }
     }

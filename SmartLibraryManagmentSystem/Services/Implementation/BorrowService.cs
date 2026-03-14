@@ -20,7 +20,7 @@ namespace SmartLibraryManagmentSystem.Services.Implementation
         }
         public async Task<bool> ApproveBorrowAsync(int borrowId)
         {
-            var borrow = await _borrowRecordRepo.GetByIdAsync(borrowId);
+            var borrow = await _borrowRecordRepo.GetByIdWithBook(borrowId);
             if (borrow == null)
             {
                 _logger.LogInformation("Borrow is empty");
@@ -31,7 +31,7 @@ namespace SmartLibraryManagmentSystem.Services.Implementation
             {
                 return false;
             }
-            borrow.Status = "Borrowd";
+            borrow.Status = "Borrowed";
             book.AvailableQuantity--;
             _borrowRecordRepo.Update(borrow);
             _bookRepo.Update(book);
@@ -42,7 +42,7 @@ namespace SmartLibraryManagmentSystem.Services.Implementation
 
         public async Task<bool> ConfirmReturnAsync(int borrowId)
         {
-            var borrow = await _borrowRecordRepo.GetByIdAsync(borrowId);
+            var borrow = await _borrowRecordRepo.GetByIdWithBook(borrowId);
             if (borrow == null)
             {
                 _logger.LogInformation("Borrow is empty here !");
@@ -73,6 +73,7 @@ namespace SmartLibraryManagmentSystem.Services.Implementation
                 DueDate = br.DueDate,
                 ReturnDate = br.ReturnDate,
                 FineAmount = br.FineAmount,
+                BorrowId=br.Id,
                 Status = br.Status.ToString()
 
             });
@@ -139,7 +140,7 @@ namespace SmartLibraryManagmentSystem.Services.Implementation
 
         public async Task<bool> RequestReturnAsync(int borrowId)
         {
-            var borrow = await _borrowRecordRepo.GetByIdAsync(borrowId);
+            var borrow = await _borrowRecordRepo.GetByIdWithBook(borrowId);
             if (borrow == null)
             {
                 return false;
