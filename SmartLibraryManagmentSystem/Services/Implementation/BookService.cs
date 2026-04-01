@@ -1,4 +1,5 @@
 ﻿using SmartLibraryManagmentSystem.Models.Entities;
+using SmartLibraryManagmentSystem.Repositories.Implementation;
 using SmartLibraryManagmentSystem.Repositories.Interfaces;
 using SmartLibraryManagmentSystem.Services.Interfaces;
 using SmartLibraryManagmentSystem.ViewModels.Book;
@@ -156,39 +157,73 @@ namespace SmartLibraryManagmentSystem.Services.Implementation
             }
         }
 
+        //public async Task<bool> UpdateBookAsync(BookUpdateViewModel model)
+        //{
+        //    try
+        //    {
+        //        var book = await _bookRepo.GetByIdAsync(model.Id); // Await the task to get the Book object
+        //        if (book == null)
+        //        {
+        //            _logger.LogError("Book are null here ");
+        //            return false;
+        //        }
+        //        if (model.Image != null)
+        //        {
+        //            var imageUrl = await _fileService.SaveImageAsync(model.Image, "Books");
+        //            book.ImageUrl = imageUrl;
+        //        }
+        //        // Update other properties if needed
+        //        book.Title = model.Title;
+        //        book.Author = model.Author;
+        //        book.Quantiry = model.Quantity;
+        //        book.CatagoryId = model.CatagoryId;
+
+        //        _bookRepo.Update(book);
+        //        await _bookRepo.SaveAsync();
+        //        _logger.LogInformation($"Book updated: {book.Title}");
+        //        return true;
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        _logger.LogError(ex, "Error updating Book");
+        //        return false;
+        //    }
+        //}
         public async Task<bool> UpdateBookAsync(BookUpdateViewModel model)
         {
-            try
-            {
-                var book = await _bookRepo.GetByIdAsync(model.Id); // Await the task to get the Book object
-                if (book == null)
-                {
-                    _logger.LogError("Book are null here ");
-                    return false;
-                }
-                if (model.Image != null)
-                {
-                    var imageUrl = await _fileService.SaveImageAsync(model.Image, "Books");
-                    book.ImageUrl = imageUrl;
-                }
-                // Update other properties if needed
-                book.Title = model.Title;
-                book.Author = model.Author;
-                book.Quantiry = model.Quantity;
-                book.CatagoryId = model.CatagoryId;
+            var book = await _bookRepo.GetByIdAsync(model.Id);
 
-                _bookRepo.Update(book);
-                await _bookRepo.SaveAsync();
-                _logger.LogInformation($"Book updated: {book.Title}");
-                return true;
-            }
-            catch (Exception ex)
-            {
-                _logger.LogError(ex, "Error updating Book");
+            if (book == null)
                 return false;
+
+            book.Title = model.Title;
+            book.Author = model.Author;
+            book.Quantiry = model.Quantity;
+            book.CatagoryId = model.CatagoryId;
+
+            // 🧠 Image handling
+            if (model.ImageFile != null)
+            {
+                var fileName = Guid.NewGuid().ToString() + Path.GetExtension(model.ImageFile.FileName);
+                var filePath = Path.Combine("wwwroot/images", fileName);
+
+                using (var stream = new FileStream(filePath, FileMode.Create))
+                {
+                    await model.ImageFile.CopyToAsync(stream);
+                }
+
+                book.ImageUrl = fileName;
             }
+            else
+            {
+                // keep old image
+                book.ImageUrl = model.ExistingImage;
+            }
+
+            _bookRepo.Update(book); 
+            return true;
         }
-              
-        
+
+
     }
 }

@@ -16,6 +16,7 @@ namespace SmartLibraryManagmentSystem.ViewModels.Book
         [Required]
         public int CatagoryId { get; set; }
          public IFormFile? ImageUrl { get; set; }
+ 
         public IEnumerable<SelectListItem>? Categories { get; set; }
     }
 }

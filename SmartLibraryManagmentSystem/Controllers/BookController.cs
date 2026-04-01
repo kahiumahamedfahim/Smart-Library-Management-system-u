@@ -88,6 +88,33 @@ namespace SmartLibraryManagmentSystem.Controllers
             return RedirectToAction("Index");
         }
         [Authorize(Roles = "Admin")]
+        [HttpPost]
+        public async Task<IActionResult> Edit(BookUpdateViewModel model)
+        {
+            if (!ModelState.IsValid)
+            {
+                var categories = await _catagoryRepository.GetAllAsync();
+
+                model.Categories = categories.Select(c => new SelectListItem
+                {
+                    Value = c.Id.ToString(),
+                    Text = c.Name
+                });
+
+                return View(model);
+            }
+
+            var result = await _bookService.UpdateBookAsync(model);
+
+            if (!result)
+            {
+                _logger.LogError("Error in Book Edit controller");
+                return NotFound();
+            }
+
+            return RedirectToAction("Index");
+        }
+        [Authorize(Roles = "Admin")]
         [HttpGet]
         public async Task<IActionResult> Edit(int id)
         {
@@ -118,33 +145,6 @@ namespace SmartLibraryManagmentSystem.Controllers
             };
 
             return View(model);
-        }
-        [Authorize(Roles = "Admin")]
-        [HttpPost]
-        public async Task<IActionResult> Edit(BookUpdateViewModel model)
-        {
-            if (!ModelState.IsValid)
-            {
-                var categories = await _catagoryRepository.GetAllAsync();
-
-                model.Categories = categories.Select(c => new SelectListItem
-                {
-                    Value = c.Id.ToString(),
-                    Text = c.Name
-                });
-
-                return View(model);
-            }
-
-            var result = await _bookService.UpdateBookAsync(model);
-
-            if (!result)
-            {
-                _logger.LogError("Error in Book Edit controller");
-                return NotFound();
-            }
-
-            return RedirectToAction("Index");
         }
         [Authorize(Roles ="Admin")]
         [HttpPost]

@@ -2,18 +2,15 @@
 @model BookUpdateViewModel
 
 <div class="container mt-4">
-
     <div class="col-md-6 mx-auto">
-
         <div class="card p-4 shadow">
 
             <h3>Edit Book</h3>
 
-            <form asp-action="Edit"
-                  method="post"
-                  enctype="multipart/form-data">
+            <form asp-action="Edit" method="post" enctype="multipart/form-data">
 
                 <input type="hidden" asp-for="Id" />
+                <input type="hidden" asp-for="ExistingImage" />
 
                 <div asp-validation-summary="All" class="text-danger"></div>
 
@@ -34,29 +31,34 @@
 
                 <div class="mb-3">
                     <label>Category</label>
-
                     <select asp-for="CatagoryId"
                             asp-items="Model.Categories"
                             class="form-control">
                     </select>
-
                 </div>
 
+                <!-- Current Image -->
+                <div class="mb-3">
+                    <label>Current Image</label><br />
+                    <img src="~/images/@Model.ExistingImage" width="120" />
+                </div>
+
+                <!-- Upload New Image -->
                 <div class="mb-3">
                     <label>Change Image</label>
-                    <input asp-for="Image" type="file" class="form-control" />
+                    <input asp-for="ImageFile" type="file" class="form-control" />
                 </div>
 
                 <button class="btn btn-success">Update</button>
 
-                <a asp-action="Index" class="btn btn-secondary">
-                    Cancel
-                </a>
+                <a asp-action="Index" class="btn btn-secondary">Cancel</a>
 
             </form>
 
         </div>
-
     </div>
-
 </div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}
